@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antools</title>
+
+    <!-- Modern-normalize  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Website Icon  -->
+    <link rel="website icon" href="/img/logotype.svg">
+
+    <!-- Animation  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="no-select" translate="no">
+    <!-- Header  -->
+    <header class="header animate__animated animate__backInLeft">
+        <div class="container">
+            <nav class="nav-bar flex">
+                <div class="logotype-wrapp flex">
+                    <img src="img/logotype.svg" alt="logotype">
+                    <h3>antools.</h3>
+                </div>
+                <ul class="header-list flex">
+                    <li class="header-list-item"><a href="index.html">Home</a></li>
+                    <li class="header-list-item"><a href="#categories">Categories</a></li>
+                    <li class="header-list-item"><a href="#collections">My Collections</a></li>
+                    <li class="header-list-item"><a href="#blog">Blog</a></li>
+                </ul>
+                <div class="buttons flex">
+                    <button onclick="OpenRegMenuEN()" type="button">Login</button>
+                    <button onclick="OpenRegMenuEN()" type="button">Sign Up</button>
+                    <button onclick="redirectToPage()" type="button">UA</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main  -->
+    <main class="main">
+
+        <!-- Section-1 (Hero)  -->
+        <section class="hero animate__animated animate__backInLeft">
+            <div class="container">
+                <div class="background-section-hero">
+                    <div class="wrapper-section-hero flex">
+                        <div class="text-block-section-hero">
+                            <h1 class="">Awesome tools for Designer & Developer<span class="accent-point">.</span></h1>
+                            <h2>Antool is a web collection of information on paid or free Design and Development tools
+                            </h2>
+                            <div class="input-wrapper flex">
+                                <img src="img/search.svg" alt="">
+                                <input type="text" placeholder="find more than 430+ tools...">
+                                <button class="search-button">Search</button>
+                            </div>
+                            <div class="img-wrapper-social-section-hero flex">
+                                <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+                                <a href="#"><img src="img/instargam.svg" alt="instargam"></a>
+                                <a href="#"> <img src="img/X.svg" alt="X"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="most-popular-tools">
+            <div class="container">
+                <h2 id="categories">Most Popular Tools</h2>
+                <h3>Tools for the best Designers and Developers
+                    <br> most popularly used in the world
+                </h3>
+                <div class="cards">
+                    <ul class="card-list flex">
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/figma-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>FIGMA</h3>
+                                    <h4>Free</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li class="like"><img src="img/heard.svg" alt=""></li>
+                                    <li class="folder"><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Visit</a></p>
+                            </div>
+                        </li>
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/scetch-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Sketch</h3>
+                                    <h4>Trial & Paid</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li><img src="img/heard.svg" alt=""></li>
+                                    <li><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Visit</a></p>
+                            </div>
+                        </li>
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/vs-code-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Visual Studio Code</h3>
+                                    <h4>Free</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li><img src="img/heard.svg" alt=""></li>
+                                    <li><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Visit</a></p>
+                            </div>
+                        </li>
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/notion-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Notion</h3>
+                                    <h4>Free & Paid</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li><img src="img/heard.svg" alt=""></li>
+                                    <li><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Visit</a></p>
+                            </div>
+                        </li>
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/slack-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Slack</h3>
+                                    <h4>Free & Paid</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li><img src="img/heard.svg" alt=""></li>
+                                    <li><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Visit</a></p>
+                            </div>
+                        </li>
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/invision-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Invision</h3>
+                                    <h4>Free & Paid</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li><img src="img/heard.svg" alt=""></li>
+                                    <li><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Visit</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-wrapp flex">
+                    <input class="button" type="button" value="Load more">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section-2  -->
+        <section class="net-works most-popular-tools" data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine" id="collections">
+            <div class="container">
+                <div class="net-works-section-wrapper">
+                    <h2>Trusted more than 150+ brand</h2>
+                    <ul class="section-net-works-list flex">
+                        <li class="section-net-works-list"><img src="img/microsoft.svg" alt="microsoft"></li>
+                        <li class="section-net-works-list"><img src="img/google.svg" alt=""></li>
+                        <li class="section-net-works-list"><img src="img/slack.svg" alt=""></li>
+                        <li class="section-net-works-list"><img src="img/wordpress.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 3 -->
+        <section class="Newcomer-Tools" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            class="most-popular-tools">
+            <div class="container">
+                <div class="Newcomer-tools-wrapper flex">
+                    <div class="Newcomer-tools-section-text-block">
+                        <h2>Newcomer Tools</h2>
+                        <p>Wow! see the latest update of the most recommended tools from reliable designers and
+                            developers</p>
+                        <button class="button-newcomer-tools-section" type="button">Explore more</button>
+                    </div>
+                    <div class="Newcomer-tools-section-card-block">
+                        <ul class="card-list flex">
+                            <li class="card-list-item">
+                                <div class="card-text-about-apps flex">
+                                    <img src="img/zerplin-logo.svg" alt="">
+                                    <div class="card-text-about-apps-wrapper flex">
+                                        <h3>Zeplin</h3>
+                                        <h4>Free & Paid</h4>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="card-images-wrapper flex">
+                                    <ul class="card-images-list flex">
+                                        <li><img src="img/heard.svg" alt=""></li>
+                                        <li><img src="img/folder.svg" alt=""></li>
+                                    </ul>
+                                    <p><a href="#">Visit</a></p>
+                                </div>
+                            </li>
+                            <li class="card-list-item">
+                                <div class="card-text-about-apps flex">
+                                    <img src="img/php-logo.svg" alt="">
+                                    <div class="card-text-about-apps-wrapper flex">
+                                        <h3>PHPStorm</h3>
+                                        <h4>Free</h4>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="card-images-wrapper flex">
+                                    <ul class="card-images-list flex">
+                                        <li><img src="img/heard.svg" alt=""></li>
+                                        <li><img src="img/folder.svg" alt=""></li>
+                                    </ul>
+                                    <p><a href="#">Visit</a></p>
+                                </div>
+                            </li>
+                            <li class="card-list-item">
+                                <div class="card-text-about-apps flex">
+                                    <img src="img/toolbox-logo.svg" alt="">
+                                    <div class="card-text-about-apps-wrapper flex">
+                                        <h3>Toolbox</h3>
+                                        <h4>Free</h4>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="card-images-wrapper flex">
+                                    <ul class="card-images-list flex">
+                                        <li><img src="img/heard.svg" alt=""></li>
+                                        <li><img src="img/folder.svg" alt=""></li>
+                                    </ul>
+                                    <p><a href="#">Visit</a></p>
+                                </div>
+                            </li>
+                            <li class="card-list-item">
+                                <div class="card-text-about-apps flex">
+                                    <img src="img/procreate-logo.svg" alt="">
+                                    <div class="card-text-about-apps-wrapper flex">
+                                        <h3>Procreate</h3>
+                                        <h4>Paid</h4>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="card-images-wrapper flex">
+                                    <ul class="card-images-list flex">
+                                        <li><img src="img/heard.svg" alt="heard"></li>
+                                        <li><img src="img/folder.svg" alt="folder"></li>
+                                    </ul>
+                                    <p><a href="#">Visit</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-4 most-popular-tools" data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine" id="blog">
+            <div class="container">
+                <div class="wrapper-section-4 flex">
+                    <div class="foto-section-4">
+                        <div class="name-frame">
+                            <h3>Ronald Richards</h3>
+                            <p>Product Manager</p>
+                        </div>
+                    </div>
+                    <div class="text-section-4">
+                        <div class="wrapper-text-section-4">
+                            <p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do.
+                                Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt
+                                Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex
+                                commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="BAA" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            class="most-popular-tools">
+            <div class="container">
+                <h2>Become a contributor?</h2>
+                <p style="width: 427px; text-align: center;">Join us and get tips & tricks to become a great Designer
+                    and Developer</p>
+                <div class="foot-btn">
+                    <div class="input-wrapper  flex">
+                        <img src="img/search.svg" alt="">
+                        <input type="text" placeholder="Enter your email...">
+                        <button class="search-button">Join Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <ul class="footer-list flex">
+                <li class="list-item-1 footer-item">
+                    <div class="logotype-wrapp flex logo-footer">
+                        <img src="img/logotype.svg" alt="logotype">
+                        <h3>antools.</h3>
+                    </div>
+                    <p id="footer-p-1">Copyright 2021. Antools</p>
+                    <p id="footer-p-2">Antool is a web collection of information on paid or free Design and Development
+                        tools</p>
+                </li>
+                <li class="list-item-2 footer-item">
+                    <h3 class="logo-footer"> Contact Us </h3>
+                    <a id="footer-p-2" href="tel:+621987463">+621987463</a>
+                    <address id="footer-p-2">M Building, No.10 A</address>
+                    <a id="footer-p-2" href="mailto:antools@awesome.com">antools@awesome.com</a>
+                </li>
+                <li class="list-item-3 footer-item">
+                    <h3 class="logo-footer">Categories</h3>
+                    <p id="footer-p-2">Design</p>
+                    <p id="footer-p-2">Development</p>
+                </li>
+                <li class="list-item-4 footer-item">
+                    <h3 class="logo-footer">Company Info</h3>
+                    <p id="footer-p-2">About Us</p>
+                    <p id="footer-p-2">Our Partners</p>
+                    <p id="footer-p-2">Blog</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <button class="go-to-top" onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // Перехід між сторінками 
+        function redirectToPage() {
+            window.location.href = "index.ua.html";
+        }
+        function OpenRegMenuEN() {
+            window.location.href = "reg-menu-en.html";
+        }
+
+        // Плавний скролл 
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
