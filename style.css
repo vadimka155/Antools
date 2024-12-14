@@ -362,6 +362,16 @@ button:not(:hover) {
     transition: 0.5s;
 }
 
+
+
+
+
+
+
+
+
+
+
 .card-list-item:not(:hover) {
     transition: 0.3s;
 }
